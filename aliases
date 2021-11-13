@@ -1,0 +1,7 @@
+alias emulator1="~/Library/Android/sdk/emulator/emulator -avd Pixel_3a_API_30_x86"
+alias emulator2="~/Library/Android/sdk/emulator/emulator -avd Pixel_3a_XL_API_26"
+alias emulatorlist="~/Library/Android/sdk/emulator/emulator -avd -list-avds"
+alias mongod="mongod --config /usr/local/etc/mongod.conf"
+alias -g G='| grep --color'
+alias vi='~/nvim-osx64/bin/nvim'
+alias vim='~/nvim-osx64/bin/nvim'
