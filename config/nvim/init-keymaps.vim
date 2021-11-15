@@ -9,8 +9,8 @@ nnoremap <C-W> :wq<cr>
 nnoremap <S-q> :qa!<cr>
 
 " alt + s to save
-nnoremap <C-S> :update<cr>
-inoremap <C-S> <Esc>:update<cr>gi
+nnoremap <C-S> :w<cr>
+inoremap <C-S> <Esc>:w<cr>gi
 
 " jk and kj to close from insert mode
 inoremap jk <Esc>

@@ -1,6 +1,7 @@
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
-
+j
+let g:NERDTreeWinSize=27
 let g:NERDTreeWinPos = "left"
 
 " Get rid of Help text

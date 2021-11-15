@@ -11,8 +11,20 @@ set clipboard=unnamed
 set smarttab
 set cindent
 syntax on
-colorscheme nightfly 
+
+"let g:neosolarized_contrast = "high"
+"let g:neosolarized_visibility = "high"
+"let g:neosolarized_vertSplitBgTrans = 1
+"let g:neosolarized_bold = 1
+"let g:neosolarized_underline = 1
+"let g:neosolarized_termBoldAsBright = 1
+"colorscheme NeoSolarized                  
+
+colorscheme nightfly                  
+
 hi Normal guibg=NONE ctermbg=NONE
+"hi VertSplit guifg=#091353 guibg=NONE gui=NONE term=NONE
+hi VertSplit guifg=#2c3043 guibg=NONE gui=NONE term=NONE
 set nocompatible                         " disable compatibility to old-time viet showmatch               
 set showmatch                            " show matching
 set mouse=v                              " middle-click paste with 

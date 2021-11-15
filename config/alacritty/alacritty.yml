@@ -55,7 +55,7 @@ font:
     x: 0
     y: 3
 
-  size: 12.0
+  size: 11.0
 
   glyph_offset:
     x: 0
@@ -66,9 +66,12 @@ font:
   
 window:
   dimensions:
-    columns: 173
-    lines: 43
+    columns: 187
+    lines: 45
   decorations: 'none'
+  position:
+    x: 49
+    y: 80
   padding:
     x: 8
     y: 8 

@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " themes
+Plug 'overcache/NeoSolarized'
 Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'ayu-theme/ayu-vim'
 Plug 'navarasu/onedark.nvim'

@@ -5,6 +5,5 @@
 nnoremap <C-P> :Telescope find_files<CR>
 
 " File finder
-nnoremap <C-M> :Telescope live_grep<CR>
-
+nnoremap <C-G> :Telescope live_grep<CR>
 
