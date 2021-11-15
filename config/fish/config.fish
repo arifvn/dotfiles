@@ -1,5 +1,3 @@
-set fish_greeting ""
-
 set -gx TERM xterm-256color
 
 set -gx EDITOR nvim
@@ -34,8 +32,10 @@ alias emulator1="~/Library/Android/sdk/emulator/emulator -avd Pixel_3a_API_30_x8
 alias emulator2="~/Library/Android/sdk/emulator/emulator -avd Pixel_3a_XL_API_26"
 alias emulatorlist="~/Library/Android/sdk/emulator/emulator -avd -list-avds"
 alias mongod="mongod --config /usr/local/etc/mongod.conf"
+alias fi='~/nvim-osx64/bin/nvim'
 alias vi='~/nvim-osx64/bin/nvim'
 alias vim='~/nvim-osx64/bin/nvim'
+alias nvim='~/nvim-osx64/bin/nvim'
 alias tm='tmux'
 alias tma='tmux attach'
 alias tmk='tmux kill-server'
