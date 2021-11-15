@@ -1,0 +1,67 @@
+# Dsiplay nice System Info every time zsh startup
+if ! [ -x "$(command -v macchina)" ]; then
+    echo "Installing macchina ..."
+    HOMEBREW_NO_AUTO_UPDATE=1 brew install macchina
+fi
+
+# DISABLE UPDATING BREW WHEN INSTALL APP
+HOMEBREW_NO_AUTO_UPDATE=1
+
+# DISABLE COMPAUDIT WARNING ON CATALINA
+ZSH_DISABLE_COMPFIX=true
+
+# OPTION 1 - USING ZPLUG - DISABLED
+# if [[ ! -d ~/.zplug ]];then
+#   echo "downloading zplug ....."
+#   git clone https://github.com/zplug/zplug ~/.zplug
+# 
+#   source ~/.zplug/init.zsh
+# 
+#   zplug "romkatv/powerlevel10k", as:theme, depth:1
+#   zplug "supercrabtree/k"
+#   zplug "zsh-users/zsh-history-substring-search", from:github, defer:2
+#   zplug "djui/alias-tips", from:github
+#   zplug "plugins/git", from:oh-my-zsh
+#   zplug "plugins/shrink-path", from:oh-my-zsh
+#   zplug "plugins/osx", from:oh-my-zsh
+#   zplug "plugins/emoji", from:oh-my-zsh
+#   zplug "plugins/dotenv", from:oh-my-zsh
+#   zplug "plugins/autojump", from:oh-my-zsh
+#   zplug "plugins/command-not-found", from:oh-my-zsh
+#   zplug "plugins/zsh-completions", from:oh-my-zsh
+#   zplug "zsh-users/zsh-syntax-highlighting", defer:2
+#   zplug "zsh-users/zsh-autosuggestions", as:plugin, defer:2
+#   
+#   if ! [ -x "$(command -v peco)" ]; then
+#       echo "Installing peco for enhancd ..."
+#       HOMEBREW_NO_AUTO_UPDATE=1 brew install peco
+#   fi
+#   zplug "b4b4r07/enhancd", use:init.sh
+#   
+#   if ! zplug check --verbose; then
+#       printf "Install? [y/N]: "
+#       if read -q; then
+#           echo; zplug install
+#       fi
+#   fi
+#   
+#   zplug load
+# fi
+  
+# OPTION 2 - USING OH MY ZSH - ENABLED
+if [[ ! -f ~/install.sh ]];then
+   cd $HOME/
+   echo "downloading oh-my-zsh ....."
+   wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+   sh install.sh
+fi 
+
+plugins=(
+  git
+  dotenv
+  macos
+)
+
+# ALIASES
+source ~/.dotfiles/aliases
+

@@ -1,9 +1,12 @@
 " leader key
-nnoremap <SPACE> <Nop>
+nnoremap <SPACE> <Nop> 
 let mapleader = " "
 
-" alt + w to quit  
-nnoremap <C-W> :q<cr>
+" alt + w to quit with save 
+nnoremap <C-W> :wq<cr>
+
+" alt + q to quit without save 
+nnoremap <S-q> :qa!<cr>
 
 " alt + s to save
 nnoremap <C-S> :update<cr>
@@ -17,15 +20,17 @@ inoremap kj <Esc>
 nnoremap <silent> zj o<Esc>k
 nnoremap <silent> zk O<Esc>j
 
-" NERDCommenter
-nmap <C-_> <Plug>NERDCommenterToggle
-vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
-vmap <C-h> <Plug>NERDCommenterSexy<CR>gv
+" switch tab using command h/l
+nnoremap <leader>j gT
+nnoremap <leader>k gt
 
-" Telescope File Finder
-nnoremap <C-P> :Telescope find_files<CR>
+" copies filepath to clipboard by pressing yf
+nnoremap <silent> yf :let @+=expand('%:p')<CR>
 
-" Fugitive Git
-nmap <leader>gh :diffget //3<CR>
-nmap <leader>gu :diffget //2<CR>
-nmap <leader>gs :G<CR>
+" copies pwd to clipboard: command yd
+nnoremap <silent> yd :let @+=expand('%:p:h')<CR>
+
+" map ss to insert space in normal mode
+" default behaviour of s is insert then delete one char backward
+nnoremap ss i<space><esc>
+

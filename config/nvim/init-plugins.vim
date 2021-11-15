@@ -1,17 +1,17 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " themes
-Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-Plug 'ghifarit53/tokyonight-vim'
 Plug 'bluz71/vim-nightfly-guicolors'
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'ayu-theme/ayu-vim'
 Plug 'navarasu/onedark.nvim'
 Plug 'tomasiser/vim-code-dark'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
-" zsh syntax highlighting
-Plug 'zsh-users/zsh-syntax-highlighting'
+" display color from hex code
+Plug 'norcalli/nvim-colorizer.lua'
+
+" enable repeat in non native commands
+Plug 'tpope/vim-repeat'
 
 " vscode like auto import
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -40,12 +40,6 @@ Plug 'sheerun/vim-polyglot'
 " vim mode info
 Plug 'vim-airline/vim-airline'
 
-" icons for all plugins
-Plug 'ryanoasis/vim-devicons'
-
-" git wrapper
-Plug 'tpope/vim-fugitive'
-
 " auto surround
 Plug 'tpope/vim-surround'
 
@@ -58,6 +52,14 @@ Plug 'christoomey/vim-tmux-navigator'
 " file finder
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+" File explorer
+Plug 'preservim/nerdtree'
+" needed by NERDtree 
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
