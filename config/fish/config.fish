@@ -2,12 +2,12 @@ set -gx TERM xterm-256color
 
 set -gx EDITOR nvim
 
-# theme
-set -g theme_color_scheme terminal-dark
-set -g fish_prompt_pwd_dir_length 1
-set -g theme_display_user yes
-set -g theme_hide_hostname no
-set -g theme_hostname always
+# Disable greeting message
+set fish_greeting
+
+# Themes default
+set fish_color_command green
+set fish_color_search_match --background='#cb12ff'
 
 # OS APP
 set -gx PATH /opt/local/bin $PATH
