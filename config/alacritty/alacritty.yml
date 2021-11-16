@@ -15,12 +15,13 @@ colors:
     red: "#d81765"
     green: "#97d01a"
     yellow: "#ffa800"
-    blue: "#16b1fb"
+    blue: "#82A0C1"
     magenta: "#ff2491"
-    cyan: "#0fdcb6"
+    cyan: "#88C0D0"
     white: "#ebebeb"
   bright:
-    black: "#38252c"
+    #black: "#38252c" # original neon theme  
+    black: "#4B5669"
     red: "#ff0000"
     green: "#76b639"
     yellow: "#e1a126"
@@ -29,7 +30,7 @@ colors:
     cyan: "#0a9b81"
     white: "#f8f8f8"
 
-background_opacity: 0.80
+background_opacity: 0.75
 
 font:
   normal:
