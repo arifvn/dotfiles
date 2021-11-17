@@ -1,0 +1,11 @@
+{
+  "Prompt": "❯",
+  "Style": {
+    "Basic": ["on_default", "default"],
+    "SavedSelection": ["bold", "on_126", "255"],
+    "Selected": ["on_126", "255"],
+    "Query": ["177", "bold"],
+    "Matched": ["178"]
+  },
+  "Use256Color": true
+}

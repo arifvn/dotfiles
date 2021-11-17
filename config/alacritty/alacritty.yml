@@ -93,6 +93,27 @@ selection:
 
 live_config_reload: true
 
+cursor:
+  # Cursor style
+  style:
+    # Cursor shape
+    #
+    # Values for `shape`:
+    #   - ? Block
+    #   - _ Underline
+    #   - | Beam
+    shape: Beam
+
+    # Cursor blinking state
+    #
+    # Values for `blinking`:
+       #- Never: Prevent the cursor from ever blinking
+    #   - Off: Disable blinking by default
+    #   - On: Enable blinking by default
+    #   - Always: Force the cursor to always blink
+    blinking: Never
+  vi_mode_style: None
+
 key_bindings:
   - { key: V, mods: Control|Shift, action: Paste }
   - { key: Key0, mods: Control, action: ResetFontSize }
@@ -107,3 +128,4 @@ key_bindings:
   - { key: N, mods: Control|Shift, action: SpawnNewInstance }
   - { key: Slash, mods: Control, chars: "\x1f" }
   - { key: Q, mods: Control, chars: "\x11" }
+  #- { key: NumpadEnter, mods: Control, chars: "" }

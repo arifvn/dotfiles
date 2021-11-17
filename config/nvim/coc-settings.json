@@ -6,11 +6,9 @@
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "typescript.tsx",
-    "json",
-    "graphql"
+    "json"
   ],
-  "suggest.snippetIndicator": "",
+  "suggest.snippetIndicator": "●",
   "diagnostic.warningSign": "●",
   "diagnostic.infoSign": "●",
   "diagnostic.hintSign": "●",

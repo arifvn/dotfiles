@@ -7,6 +7,17 @@ let g:NERDTreeWinPos = "left"
 " Get rid of Help text
 let NERDTreeMinimalUI=1
 
+" auto refresh tree
+"autocmd BufEnter NERD_tree_* | execute 'normal R'
+map <C-n> :call NERDTreeToggleAndRefresh()<CR>
+
+function NERDTreeToggleAndRefresh()
+  :NERDTreeToggle
+  if g:NERDTree.IsOpen()
+    :NERDTreeRefreshRoot
+  endif
+endfunction
+
 " Start NERDTree when Vim starts with a directory argument.
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |

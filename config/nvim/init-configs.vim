@@ -23,8 +23,8 @@ syntax on
 colorscheme nightfly                  
 
 hi Normal guibg=NONE ctermbg=NONE
-hi VertSplit guifg=#091353 guibg=NONE gui=NONE term=NONE
-"hi VertSplit guifg=#2c3043 guibg=NONE gui=NONE term=NONE
+hi VertSplit guifg=#091353 guibg=NONE gui=NONE term=NONE    " set no bg vertical split
+hi Visual term=reverse cterm=reverse guibg=Grey             " make selected text grey
 set nocompatible                         " disable compatibility to old-time viet showmatch               
 set showmatch                            " show matching
 set mouse=v                              " middle-click paste with 
@@ -58,29 +58,3 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
 endif
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

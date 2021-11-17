@@ -1,24 +1,24 @@
-# PATH
+# App default PATH
 export PATH="/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH"
 
-# ANDROID STUDIO
+# Android Studio
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-# MONGODB
+# Mongodb
 export PATH="$PATH:/usr/local/mongodb/bin:$PATH"
 
-# NPM
+# Npm
 export PATH=~/.npm-global/bin:$PATH
 
-# COMPOSER
+# Composer
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
-# GEM
+# Gem
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 
-# NVIM
+# Nvim
 export PATH="$HOME/nvim-osx64/bin/:$PATH"
