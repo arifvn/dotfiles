@@ -1,6 +1,5 @@
-"set cc=80                              " set an 80 column border for good coding style
 "set ignorecase                         " case insensitive 
-let &fcs='eob: '                        " replace ~ for black line white empty  
+let &fcs='eob: '                        " replace ~ for blank line with empty  
 set termguicolors
 set number
 set relativenumber
@@ -12,15 +11,18 @@ set smarttab
 set cindent
 syntax on
 
-"let g:neosolarized_contrast = "high"
-"let g:neosolarized_visibility = "high"
+" MAIN THEME
+colorscheme nightfly                  
+
+" SECONDARY THEME
+"let g:neosolarized_contrast = 'high'
+"let g:neosolarized_visibility = 'high'
 "let g:neosolarized_vertSplitBgTrans = 1
 "let g:neosolarized_bold = 1
-"let g:neosolarized_underline = 1
-"let g:neosolarized_termBoldAsBright = 1
+"let g:neosolarized_underline = 0
+"let g:neosolarized_termBoldAsBright = 0
+"set background=dark
 "colorscheme NeoSolarized                  
-
-colorscheme nightfly                  
 
 hi Normal guibg=NONE ctermbg=NONE
 hi VertSplit guifg=#091353 guibg=NONE gui=NONE term=NONE    " set no bg vertical split
