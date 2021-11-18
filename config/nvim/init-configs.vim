@@ -1,3 +1,7 @@
+" leader key
+nnoremap <SPACE> <Nop> 
+let mapleader = " "
+
 "set ignorecase                         " case insensitive 
 let &fcs='eob: '                        " replace ~ for blank line with empty  
 set termguicolors
@@ -27,7 +31,6 @@ colorscheme nightfly
 hi Normal guibg=NONE ctermbg=NONE
 hi VertSplit guifg=#091353 guibg=NONE gui=NONE term=NONE    " set no bg vertical split
 hi Visual term=reverse cterm=reverse guibg=Grey             " make selected text grey
-set nocompatible                         " disable compatibility to old-time viet showmatch               
 set showmatch                            " show matching
 set mouse=v                              " middle-click paste with 
 set incsearch                            " incremental search

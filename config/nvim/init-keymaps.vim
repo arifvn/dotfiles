@@ -1,7 +1,3 @@
-" leader key
-nnoremap <SPACE> <Nop> 
-let mapleader = " "
-
 " alt + w to quit with save 
 nnoremap <C-W> :wq<cr>
 
@@ -19,10 +15,6 @@ inoremap kj <Esc>
 " zj and zk to add blank line below and above
 nnoremap <silent> zj o<Esc>k
 nnoremap <silent> zk O<Esc>j
-
-" switch tab using command h/l
-nnoremap <leader>j gT
-nnoremap <leader>k gt
 
 " copies filepath to clipboard by pressing yf
 nnoremap <silent> yf :let @+=expand('%:p')<CR>

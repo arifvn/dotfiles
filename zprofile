@@ -22,3 +22,6 @@ export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 
 # Nvim
 export PATH="$HOME/nvim-osx64/bin/:$PATH"
+
+# Term
+export TERM=xterm-256color
