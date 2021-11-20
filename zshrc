@@ -11,8 +11,10 @@ fi
 #
 # ------------------------------------
 
+# Path to Oh My Zsh Installation
 export ZSH="$HOME/.oh-my-zsh"
 
+# Theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
@@ -26,18 +28,18 @@ plugins=(
   zsh-history-substring-search
 )
 
+# Enable auto completions
 autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
+# Enable enhancd plugin
 source ~/.zplug/init.zsh
 zplug "b4b4r07/enhancd", use:init.sh
 
-   if ! zplug check --verbose; then
-       printf "install? [y/n]: "
-       if read -q; then
-           echo; zplug install
-       fi
+   if ! zplug check; then
+      echo "\nIntalling enhancd ...\n"
+      zplug install
    fi
 zplug load
 
