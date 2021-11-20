@@ -5,7 +5,7 @@
 " ------------------------------------------------------------------------
 
 scriptencoding utf-8
-"set relativenumber                      " show relativenumber when scrolling
+set relativenumber                      " show relativenumber when scrolling
 "set ignorecase                          " ignorecase when searhing 
 "set cursorline                          " cursor line, might slow down scrolling if on
 set nosc noru                            " disable info about cursor position
