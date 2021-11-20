@@ -29,3 +29,20 @@ nnoremap ss i<space><esc>
 " select all using y + a
 nmap <silent> ya gg<S-v>G
 
+" Remap arrow keys to do nothing
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+
+" Remap arrow keys to do nothing
+inoremap <Left> <NOP>
+inoremap <Right> <NOP>
+inoremap <Up> <NOP>
+inoremap <Down> <NOP>
+
+" Remap arrow keys to do nothing
+vnoremap <Left> <NOP>
+vnoremap <Right> <NOP>
+vnoremap <Up> <NOP>
+vnoremap <Down> <NOP>
