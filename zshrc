@@ -1,8 +1,19 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export ZSH="/Users/hannaharif/.oh-my-zsh"
+# ------------------------------------
+#
+# Intalling ZSH Plugin
+#
+# ------------------------------------
+
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
   git
@@ -14,16 +25,13 @@ plugins=(
   zsh-syntax-highlighting
   zsh-history-substring-search
 )
+
+autoload -U compinit && compinit
+
 source $ZSH/oh-my-zsh.sh
 
-if [[ ! -d ~/.zplug ]];then
-  echo "cloning zplug ..."
-  git clone https://github.com/zplug/zplug ~/.zplug
-fi
-
 source ~/.zplug/init.zsh
-   zplug "romkatv/powerlevel10k", as:theme, depth:1
-   zplug "b4b4r07/enhancd", use:init.sh
+zplug "b4b4r07/enhancd", use:init.sh
 
    if ! zplug check --verbose; then
        printf "install? [y/n]: "
@@ -33,6 +41,13 @@ source ~/.zplug/init.zsh
    fi
 zplug load
 
+# ------------------------------------
+#
+# Sourcing aliases 
+#
+# ------------------------------------
+
 source ~/.dotfiles/aliases
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
