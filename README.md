@@ -1,6 +1,18 @@
 # Dotfiles 
 
-> Just my dotfiles
+> Just my dotfiles 🌱
+
+## Setting up your Mac
+1. Clone this repo to `~/.dotfiles` with:
+```zsh
+git clone https://github.com/empun/dotfiles.git ~/.dotfiles
+```
+2. Open up .dotfiles and run the install script
+```zsh
+cd ~/.dotfiles
+
+sh install.sh
+```
 
 ## Todo
 - Add Iterm config
