@@ -3,10 +3,13 @@
 # ------------------------------------------ 
 #
 # TASKS
+# 
 # - Install NVIM 
 # - Make directory for VIM-PLUG
 # - Intall VIM-PLUG for managing NVIM plugin
+#  
 # - Set ZSH as default shell
+# 
 # - Install OH MY ZSH for managing zsh plugin
 # - Install ZSH POWERLEVEL10K theme
 # - Install ZSH Autosuggestions 
@@ -14,7 +17,9 @@
 # - Install ZSH Syntax Hightlighting 
 # - Install ZSH History Substring 
 # - Install ZPLUG for for installing ZSH Enhancd 
+# 
 # - Deleteing default .zshrc .zprofile .aliases
+# 
 # - Intall RCM to update .zshrc .zprofile .aliases from my .dotfiles/ 
 #
 # ------------------------------------------ 
