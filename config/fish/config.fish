@@ -50,21 +50,28 @@ set -gx PATH $HOME/nvim-osx64/bin $PATH
 alias emulator1="~/Library/Android/sdk/emulator/emulator -avd Pixel_3a_API_30_x86"
 alias emulator2="~/Library/Android/sdk/emulator/emulator -avd Pixel_3a_XL_API_26"
 alias emulatorlist="~/Library/Android/sdk/emulator/emulator -avd -list-avds"
+
 alias mongod="mongod --config /usr/local/etc/mongod.conf"
+
 alias fi='nvim'
 alias vi='nvim'
 alias vim='nvim'
+
 alias tm='tmux'
 alias tma='tmux attach'
 alias tmk='tmux kill-server'
 alias tms='tmux source-file ~/.tmux.conf'
+alias tml='tmux ls'
+
 alias md='command mkdir'
+
 alias l='command clear'
+
 alias j='z'
 alias kt='command sh ~/.kitty.sh'
 alias chrome='command sh ~/.chrome.sh'
 alias ala='command sh ~/.alacritty.sh'
-alias tml='tmux ls'
+
 alias k='exa --long --git --icons --all'
 alias km='exa --long --git --icons --all --sort=modified'
 alias ls='exa --long --git --icons --all'
