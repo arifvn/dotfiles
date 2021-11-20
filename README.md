@@ -7,7 +7,7 @@
 ```zsh
 git clone https://github.com/empun/dotfiles.git ~/.dotfiles
 ```
-2. Open up .dotfiles and run the install script
+2. Open up .dotfiles directory and run the installation script
 ```zsh
 cd ~/.dotfiles
 
