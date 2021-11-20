@@ -26,3 +26,6 @@ nnoremap <silent> yd :let @+=expand('%:p:h')<CR>
 " default behaviour of s is insert then delete one char backward
 nnoremap ss i<space><esc>
 
+" select all using y + a
+nmap <silent> ya gg<S-v>G
+

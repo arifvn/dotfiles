@@ -8,9 +8,11 @@
     "typescriptreact",
     "json"
   ],
+  "coc.source.emoji.filetypes": null,
+  "coc.source.emoji.triggerCharacters": [":", "…", "·", "ø", "µ"],
   "suggest.snippetIndicator": "●",
   "diagnostic.warningSign": "●",
-  "diagnostic.infoSign": "●",
+  "diagnostic.infoSign": "",
   "diagnostic.hintSign": "●",
   "diagnostic.errorSign": "●"
 }

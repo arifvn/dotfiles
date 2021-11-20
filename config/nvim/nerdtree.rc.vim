@@ -1,20 +1,19 @@
-nnoremap <C-n> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
-j
 let g:NERDTreeWinSize=27
 let g:NERDTreeWinPos = "left"
 
-" Get rid of Help text
+" Get rid of help text
 let NERDTreeMinimalUI=1
 
-" auto refresh tree
-"autocmd BufEnter NERD_tree_* | execute 'normal R'
-map <C-n> :call NERDTreeToggleAndRefresh()<CR>
+" nnoremap <silent> <C-n> :NERDTreeToggle<CR>
+nnoremap <silent> <C-f> :NERDTreeFind<CR>
 
+" Auto refresh tree
+" autocmd BufEnter NERD_tree_* | execute 'normal R'
+map <silent> <C-t> :call NERDTreeToggleAndRefresh()<CR>
 function NERDTreeToggleAndRefresh()
-  :NERDTreeToggle
+ :silent :NERDTreeToggle
   if g:NERDTree.IsOpen()
-    :NERDTreeRefreshRoot
+    :silent :NERDTreeRefreshRoot
   endif
 endfunction
 
@@ -39,5 +38,4 @@ autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
 " If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
 autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
-
 

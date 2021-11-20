@@ -5,7 +5,7 @@ colors:
   name: Neon
   author: ""
   primary:
-    background: "#171717"
+    background: "#272936"
     foreground: "#f8f8f8"
   cursor:
     text: "#171717"
@@ -66,14 +66,13 @@ font:
 window:
   dimensions:
     columns: 187
-    lines: 44
-  decorations: 'none'
+    lines: 41
   position:
     x: 49
     y: 70
   padding:
-    x: 8
-    y: 8
+    x: 20
+    y: 13
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
