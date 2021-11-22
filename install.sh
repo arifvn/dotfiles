@@ -2,14 +2,35 @@
 
 # ------------------------------------------ 
 #
-# TASKS
-# 
-# - Install NVIM 
+# - Install Xcode Command Line Tools  
+# - Install Brew 
+# - Install All Apps from Brewfile
+
+
+echo "Setting up your Mac..."
+
+# Install Command Line Tools
+xcode-select --install
+
+# Check for Homebrew and install if we don't have it
+if test ! $(which brew); then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+# Update Homebrew recipes
+brew update
+
+# Install All Apps from Brewfile (see Brewfile) 
+brew tap homebrew/bundle
+brew bundle
+
+
+# ------------------------------------------ 
+#
+# - Install Neovim 
 # - Make directory for VIM-PLUG
 # - Intall VIM-PLUG for managing NVIM plugin
-#  
 # - Set ZSH as default shell
-# 
 # - Install OH MY ZSH for managing zsh plugin
 # - Install ZSH POWERLEVEL10K theme
 # - Install ZSH Autosuggestions 
@@ -17,12 +38,9 @@
 # - Install ZSH Syntax Hightlighting 
 # - Install ZSH History Substring 
 # - Install ZPLUG for for installing ZSH Enhancd 
-# 
-# - Deleteing default .zshrc .zprofile .aliases
-# 
+# - Deleting default .zshrc .zprofile .aliases
 # - Intall RCM to update .zshrc .zprofile .aliases from my .dotfiles/ 
-#
-# ------------------------------------------ 
+
 
 # Install NVIM if it's not already installed 
 if [[ -f "$HOME/nvim-osx64/bin/nvim" ]]; then
