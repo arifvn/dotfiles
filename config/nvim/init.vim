@@ -45,6 +45,8 @@ set scrolloff=10                         " make content always visible, folllowi
 set t_BE=
 set background=dark                      " use colors that suit a dark background
 set backspace=start,eol,indent
+set splitbelow                           " set cursor to new created split window
+set splitright                           " set cursor to new created split window
 
 " clear search result when entering insert mode
 augroup ClearSearch

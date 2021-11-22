@@ -16,7 +16,7 @@ telescope.setup{
       theme = "dropdown"
     },
     help_tags = {
-      theme = "dropdown"
+     theme = "dropdown"
     },
   }
 }

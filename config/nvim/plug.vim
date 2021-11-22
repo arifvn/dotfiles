@@ -66,7 +66,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-fugitive'
 
 " Display GIT Diff 
-Plug 'vim-scripts/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 
 " Show History at Startup
 Plug 'mhinz/vim-startify', {'branch' : 'center'}

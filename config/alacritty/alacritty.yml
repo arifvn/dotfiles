@@ -30,24 +30,24 @@ colors:
     cyan: "#0a9b81"
     white: "#f8f8f8"
 
-background_opacity: 0.75
+background_opacity: 0.90
 
 font:
   normal:
-    #family: "Hack Nerd Font"
-    family: "SauceCodePro Nerd Font"
+    family: "Hack Nerd Font"
+    #family: "SauceCodePro Nerd Font"
     style: Regular
   bold:
-    #family: "Hack Nerd Font"
-    family: "SauceCodePro Nerd Font"
+    family: "Hack Nerd Font"
+    #family: "SauceCodePro Nerd Font"
     style: Bold
   italic:
-    #family: "Hack Nerd Font"
-    family: "SauceCodePro Nerd Font"
+    family: "Hack Nerd Font"
+    #family: "SauceCodePro Nerd Font"
     style: Italic
   bold_italic:
-    #family: "Hack Nerd Font"
-    family: "SauceCodePro Nerd Font"
+    family: "Hack Nerd Font"
+    #family: "SauceCodePro Nerd Font"
     style: Bold Italic
 
   offset:
@@ -59,11 +59,12 @@ font:
   glyph_offset:
     x: 0
     y: 0
-  use_thin_strokes: true
+  use_thin_strokes: false
 
   draw_bold_text_with_bright_colors: true
 
 window:
+  decorations: 'None'
   dimensions:
     columns: 187
     lines: 41
@@ -72,7 +73,7 @@ window:
     y: 70
   padding:
     x: 20
-    y: 13
+    y: 5
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.

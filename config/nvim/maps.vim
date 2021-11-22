@@ -20,11 +20,11 @@ nnoremap <silent> zk O<Esc>j
 nnoremap <silent> yf :let @+=expand('%:p')<CR>
 
 " copies pwd to clipboard: command yd
-nnoremap <silent> yd :let @+=expand('%:p:h')<CR>
-
+noremap <silent> yd :let @+=expand('%:p:h')<CR>
+ 
 " map ss to insert space in normal mode
 " default behaviour of s is insert then delete one char backward
-nnoremap ss i<space><esc>
+"nnoremap ss i<space><esc>
 
 " select all using y + a
 nmap <silent> ya gg<S-v>G

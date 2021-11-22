@@ -20,6 +20,8 @@ set fish_color_search_match --background='#cb12ff'
 # Os app
 set -gx PATH /opt/local/bin $PATH
 set -gx PATH /opt/local/sbin $PATH
+set -gx PATH /usr/local/bin $PATH
+set -gx PATH /usr/local/sbin $PATH
 
 # Android SDK 
 set -gx ANDROID_HOME $HOME/Library/Android/sdk

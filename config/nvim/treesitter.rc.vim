@@ -9,6 +9,7 @@ lua << EOF
       disable = {},
     },
     ensure_installed = {
+      "bash",
       "tsx",
       "toml",
       "fish",

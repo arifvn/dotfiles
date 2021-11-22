@@ -6,13 +6,18 @@
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "json"
+    "json",
+    "markdown",
+    "css",
+    "html"
   ],
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
   "coc.source.emoji.filetypes": null,
   "coc.source.emoji.triggerCharacters": [":", "…", "·", "ø", "µ"],
   "suggest.snippetIndicator": "●",
   "diagnostic.warningSign": "●",
-  "diagnostic.infoSign": "",
-  "diagnostic.hintSign": "●",
+  "diagnostic.infoSign": "⌔",
+  "diagnostic.hintSign": "",
   "diagnostic.errorSign": "●"
 }
