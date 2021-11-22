@@ -43,3 +43,7 @@ Installing pre-downloaded apps 🥕
 - IntelIJ Idea
 - Krita
 - NTFS for Mac
+
+🌱 Some configs are taken from :
+
+- [driesvints](https://github.com/driesvints/dotfiles)
