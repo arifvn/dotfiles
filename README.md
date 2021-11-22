@@ -1,22 +1,42 @@
-# Dotfiles 
+# Dotfiles
 
-> Just my dotfiles 🌱
+> Just my dotfiles that would setup my Mac to my favourite configs. 🌱
 
 ## Setting up your Mac
+
 1. Clone this repo to `~/.dotfiles` with:
+
 ```zsh
 git clone https://github.com/empun/dotfiles.git ~/.dotfiles
 ```
-2. Open up .dotfiles directory and run the installation script
-```zsh
-cd ~/.dotfiles
 
-sh install.sh
+2. Run the installation script
+
+```zsh
+sh ~/.dotfiles/install.sh
+```
+
+💎 This command would do the following tasks :
+
+- Installing all apps listed in Brewfile (see Brewfile)
+- Setting up Terminal Emulator, Shell, Tmux and Neovim
+
+3. Sync to Dropbox, then run the following
+
+```zsh
+# Symlink the Mackup config file to the home directory
+ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
+
+# Restore all apps configuration
+mackup restore
 ```
 
 ## Todo
-- Add Iterm config
-- Install Brew and Cask
-- Listing all App Installed
-- Saving all App's Settings
-- Create scripts to auto install
+
+Installing pre-downloaded apps 🥕
+
+- MS Office
+- Android Studio
+- IntelIJ Idea
+- Krita
+- NTFS for Mac
