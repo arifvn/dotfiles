@@ -24,7 +24,9 @@ sh ~/.dotfiles/install.sh
 - Installing all apps listed in Brewfile (see Brewfile)
 - Setting up Terminal Emulator, Shell, Tmux and Neovim
 
-3. Sync to Dropbox, then run the following
+3. Sync to Dropbox
+
+4. Run the following
 
 ```zsh
 # Symlink the Mackup config file to the home directory
@@ -32,6 +34,13 @@ ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
 # Restore all apps configuration
 mackup restore
+```
+
+5. Close all preference windows. Adjust some preferences inside .macos file, then run
+
+```zsh
+# Set macOS preferences
+source .macos
 ```
 
 ## Todo
