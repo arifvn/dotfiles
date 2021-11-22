@@ -44,6 +44,9 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 "
 " ----------------------------------------
 
+" Markdown previewer
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
 " Easy Select Replace like VSCode
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 

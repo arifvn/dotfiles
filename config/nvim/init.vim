@@ -81,6 +81,7 @@ source ~/.config/nvim/colorizer.rc.vim
 source ~/.config/nvim/nerdtree.rc.vim
 source ~/.config/nvim/tmuxnavigator.rc.vim
 source ~/.config/nvim/multiline.rc.vim
+source ~/.config/nvim/markdownpreview.rc.vim
 
 source ~/.config/nvim/gitgutter.rc.vim
 source ~/.config/nvim/fugutivegit.rc.vim
