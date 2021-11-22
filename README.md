@@ -2,6 +2,9 @@
 
 > Just my dotfiles that would setup my Mac to my favourite configs. 🌱
 
+<p align="center"><img src="art/neovim2.png"></p>
+<p align="center"><img src="art/neovim1.png"></p>
+
 ## Setting up your Mac
 
 1. Clone this repo to `~/.dotfiles` with:
