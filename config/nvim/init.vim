@@ -5,12 +5,12 @@
 " ------------------------------------------------------------------------
 
 scriptencoding utf-8
-set relativenumber                      " show relativenumber when scrolling
+set relativenumber                       " show relativenumber when scrolling
 "set ignorecase                          " ignorecase when searhing 
 "set cursorline                          " cursor line, might slow down scrolling if on
 set nosc noru                            " disable info about cursor position
 set noswapfile                           " disable creating swapfile
-"set nowrap                               " prevent wrapping line 
+set nowrap                               " prevent wrapping line 
 set nobackup                             " prevent creating backup file 
 set nowritebackup
 set nocompatible                         " disable compatibility to old-time viet showmatch               
@@ -43,10 +43,13 @@ set encoding=UTF-8
 set clipboard=unnamed                    " enable paste from another program 
 set scrolloff=10                         " make content always visible, folllowing the cursor
 set t_BE=
-set background=dark                      " use colors that suit a dark background
 set backspace=start,eol,indent
+set background=dark                      " use colors that suit a dark background
 set splitbelow                           " set cursor to new created split window
 set splitright                           " set cursor to new created split window
+set noshowcmd                            " don't show last command
+set noshowmode                           " don't show show mode, airline already handle it 
+set signcolumn=yes                       " prevent shift text whenever git/diagnosist sign appear
 
 " clear search result when entering insert mode
 augroup ClearSearch
@@ -71,9 +74,11 @@ endif
 
 source ~/.config/nvim/plug.vim
 
-source ~/.config/nvim/coc.rc.vim
+"source ~/.config/nvim/coc.rc.vim
+source ~/.config/nvim/lspconfig1.rc.vim
 source ~/.config/nvim/treesitter.rc.vim
 
+source ~/.config/nvim/markdownpreview.rc.vim
 source ~/.config/nvim/telescope.rc.vim
 source ~/.config/nvim/nerdcommenter.rc.vim
 source ~/.config/nvim/nerdtreehl.rc.vim
@@ -81,11 +86,10 @@ source ~/.config/nvim/colorizer.rc.vim
 source ~/.config/nvim/nerdtree.rc.vim
 source ~/.config/nvim/tmuxnavigator.rc.vim
 source ~/.config/nvim/multiline.rc.vim
-source ~/.config/nvim/markdownpreview.rc.vim
+source ~/.config/nvim/lualine.rc.vim
 
 source ~/.config/nvim/gitgutter.rc.vim
 source ~/.config/nvim/fugutivegit.rc.vim
 
 source ~/.config/nvim/themes.rc.vim
 source ~/.config/nvim/maps.vim
-

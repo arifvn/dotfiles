@@ -10,33 +10,44 @@ Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'overcache/NeoSolarized'
 
+
 " ----------------------------------------
 "
 " SYNTAX HIGHLIGHTING, COMPLETIONS, LINTER Etc.
 "
 " ----------------------------------------
 
-" SNIPPETS
-" this usually is used together with COC
-Plug 'honza/vim-snippets'
-
-Plug 'morgsmccauley/vim-react-native-snippets'
-
-"OPTION 1
-"--------------------
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-"OPTION 2
-"--------------------
-"Plug 'dense-analysis/ale'
-
-"OPTION 3
-"--------------------
-"Plug 'neovim/nvim-lspconfig'
-
-" Syntax Hightligthing 
-" Plug 'sheerun/vim-polyglot' - ANOTHER OPTION 
+" Syntax Hightligthing 1
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+" Syntax Hightligthing 2
+" Plug 'sheerun/vim-polyglot'
+
+" OPTION 1
+" -------------------------
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'honza/vim-snippets'
+" Plug 'morgsmccauley/vim-react-native-snippets'
+
+" OPTION 2
+" -------------------------
+" Plug 'dense-analysis/ale'
+
+" OPTION 3
+" -------------------------
+" Common Lsp Config
+Plug 'neovim/nvim-lspconfig'
+" Completion
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+" Snippets Loader
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip'
+" Snippets Collections
+Plug 'rafamadriz/friendly-snippets'
 
 " ----------------------------------------
 "
@@ -75,7 +86,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-startify', {'branch' : 'center'}
 
 " VIM Mode Info
-Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline'
+Plug 'nvim-lualine/lualine.nvim'
 
 " Easy Navigate between VIM Pane and TMUX Pane
 Plug 'christoomey/vim-tmux-navigator'
