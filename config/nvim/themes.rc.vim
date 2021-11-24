@@ -1,7 +1,7 @@
 " THEME 1
-"let g:nightflytransparent = 1
-"let g:nightflycursorcolor = 1
-"let g:nightflynormalfloat = 1
+let g:nightflytransparent = 1
+let g:nightflycursorcolor = 1
+let g:nightflynormalfloat = 1
 colorscheme nightfly
 
 " THEME 2
