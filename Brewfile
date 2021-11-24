@@ -7,7 +7,6 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "mongodb/brew"
-tap "wez/wezterm"
 
 # -------------------------------------------------
 # TERMINAL
@@ -28,7 +27,6 @@ brew "tmux"               # Terminal multiplexer
 cask "kitty"                      # Cross-platform, fast, feature-rich, GPU based terminal
 cask "alacritty"                  # GPU-accelerated terminal emulator
 cask "iterm2"                     # Terminal emulator as alternative to Apple's Terminal app
-cask "wezterm"                    #  GPU-accelerated cross-platform terminal emulator and multiplexer
 
 # -------------------------------------------------
 # DEVELOPMETS 
