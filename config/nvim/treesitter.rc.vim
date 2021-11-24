@@ -8,7 +8,7 @@ lua << EOF
       enable = false,
       disable = {},
     },
-    ensure_installed = {
+   ensure_installed = {
       "bash",
       "tsx",
       "toml",
@@ -18,8 +18,10 @@ lua << EOF
       "yaml",
       "swift",
       "html",
-      "scss"
-    },
+      "scss",
+      "typescript", 
+      "javascript"
+      },
   }
   local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
   parser_config.tsx.used_by = { "javascript", "typescript.tsx" }
