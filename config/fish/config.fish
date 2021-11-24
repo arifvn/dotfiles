@@ -71,6 +71,7 @@ alias l='command clear'
 
 alias j='z'
 alias kt='command sh ~/.kitty.sh'
+alias it='command sh ~/.iterm.sh'
 alias chrome='command sh ~/.chrome.sh'
 alias ala='command sh ~/.alacritty.sh'
 
