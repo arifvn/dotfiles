@@ -73,9 +73,6 @@ Plug 'preservim/nerdcommenter'
 " Display Color from HEX Code
 Plug 'norcalli/nvim-colorizer.lua'
 
-" Enable [dot] Repeat in Non Native Commands
-Plug 'tpope/vim-repeat'
-
 " Easy GIT Commit Merge Etc
 Plug 'tpope/vim-fugitive'
 
@@ -83,7 +80,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 " Show History at Startup
-Plug 'mhinz/vim-startify', {'branch' : 'center'}
+Plug 'glepnir/dashboard-nvim'
+" Plug 'mhinz/vim-startify', {'branch' : 'center'}
 
 " VIM Mode Info
 " Plug 'vim-airline/vim-airline'

@@ -3,7 +3,11 @@ local telescope = require('telescope')
 
 telescope.setup{
   defaults = {
-    preview = false,
+    preview = false, 
+    prompt_prefix = ' ',
+    selection_caret = '▶ ',
+    layout_config = { horizontal = { preview_width = 0.5 } },
+    file_ignore_patterns = { 'node_modules/.*', '%.env' },
   },
   pickers = {
     find_files = {

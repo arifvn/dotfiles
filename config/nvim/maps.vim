@@ -26,8 +26,8 @@ noremap <silent> yd :let @+=expand('%:p:h')<CR>
 " default behaviour of s is insert then delete one char backward
 "nnoremap ss i<space><esc>
 
-" select all using y + a
-nmap <silent> ya gg<S-v>G
+" select all and copy using y + a
+nmap <silent> ya gg<S-v>GY<C-c>
 
 " Remap arrow keys to do nothing
 noremap <Left> <NOP>
