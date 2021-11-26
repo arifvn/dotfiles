@@ -1,7 +1,9 @@
 " THEME 1
 let g:nightflytransparent = 1
-let g:nightflycursorcolor = 1
-let g:nightflynormalfloat = 1
+let g:nightflycursorcolor = 0
+let g:nightflynormalfloat = 0
+let g:nightflyUnderlineMatchParen = 1
+let g:nightflyVertSplits = 0
 colorscheme nightfly
 
 " THEME 2
@@ -15,7 +17,7 @@ colorscheme nightfly
 "colorscheme neosolarized                  
 
 " THEME 3
-"colorscheme dracula
+" colorscheme dracula
 
 " make sure place this down after colorscheme is defined
 hi Normal guibg=NONE ctermbg=NONE                           " make bg support transparency
