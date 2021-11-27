@@ -10,10 +10,10 @@ alias vim='nvim'
 
 alias md='mkdir'
 
-alias kt='command sh ~/.kitty.sh'
-alias it='command sh ~/.iterm.sh'
-alias chrome='command sh ~/.chrome.sh'
-alias ala='command sh ~/.alacritty.sh'
+alias kt='sh ~/.scripts/kitty.sh'
+alias it='sh ~/.scripts/iterm.sh'
+alias chrome='sh ~/.scripts/chrome.sh'
+alias ala='sh ~/.scripts/alacritty.sh'
 
 alias tml='tmux ls'
 alias tm='tmux'

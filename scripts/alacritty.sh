@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# this will positioning my kitty to my favourite window size and position
+# this will positioning Alacritty window to spesific size and position
 
 loggedInUser="$(whoami)"
 

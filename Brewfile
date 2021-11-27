@@ -49,6 +49,9 @@ brew "php"
 brew "composer"
 brew "mysql"
 brew "git"
+brew "go"
+brew "cmake"
+brew "efm-langserver"
 
 # -------------------------------------------------
 # BACKUP TOOLS
@@ -57,6 +60,7 @@ brew "git"
 brew "rcm"                  # RC file (dotfile) management
 brew "mas"                  # Mac App Store command-line interface
 brew "mackup"               # Keep your Mac's application settings in sync
+brew "dropbox"       
 
 # -------------------------------------------------
 # UTILS 
@@ -73,7 +77,7 @@ brew "ripgrep"              # Search tool like grep and The Silver Searcher
 cask "osxfuse"              # File system integration
 cask "webpquicklook"        # Enable .webp to be shown in Quick Look App
 cask "qlmarkdown"           # Enable rendered markdown to be shown in Quick Look App
-cask "quicklook-json"           # Enable formatted json to be shown in Quick Look App
+cask "quicklook-json"       # Enable formatted json to be shown in Quick Look App
 brew "ffmpeg"
 
 # -------------------------------------------------

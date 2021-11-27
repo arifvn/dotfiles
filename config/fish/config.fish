@@ -45,6 +45,12 @@ set -gx PATH $HOME/.gem/ruby/2.6.0/bin $PATH
 # Nvim
 set -gx PATH $HOME/nvim-osx64/bin $PATH
 
+# Lua Language Server
+set -gx PATH $HOME/lua-language-server/bin/macOS $PATH
+
+# Lua Formatter (stylua)
+set -gx PATH $HOME/.cargo/bin $PATH
+
 # ---------------------------
 # ALIASES 
 # ---------------------------
@@ -59,22 +65,21 @@ alias fi='nvim'
 alias vi='nvim'
 alias vim='nvim'
 
+alias md='command mkdir'
+
+alias j='z'
+alias kt='command sh ~/.scripts/kitty.sh'
+alias it='command sh ~/.scripts/iterm.sh'
+alias chrome='command sh ~/.scripts/chrome.sh'
+alias ala='command sh ~/.scripts/alacritty.sh'
+
 alias tm='tmux'
 alias tma='tmux attach'
 alias tmk='tmux kill-server'
 alias tms='tmux source-file ~/.tmux.conf'
 alias tml='tmux ls'
 
-alias md='command mkdir'
-
 alias l='command clear'
-
-alias j='z'
-alias kt='command sh ~/.kitty.sh'
-alias it='command sh ~/.iterm.sh'
-alias chrome='command sh ~/.chrome.sh'
-alias ala='command sh ~/.alacritty.sh'
-
 alias k='exa --long --git --icons --all'
 alias km='exa --long --git --icons --all --sort=modified'
 alias ls='exa --long --git --icons --all'
