@@ -15,6 +15,7 @@ alias it='sh ~/.scripts/iterm.sh'
 alias chrome='sh ~/.scripts/chrome.sh'
 alias ala='sh ~/.scripts/alacritty.sh'
 alias anim='sh ~/.scripts/anim.sh'
+alias vpn='sh ~/.scripts/vpn.sh'
 
 alias tml='tmux ls'
 alias tm='tmux'

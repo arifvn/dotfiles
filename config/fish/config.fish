@@ -72,6 +72,8 @@ alias kt='command sh ~/.scripts/kitty.sh'
 alias it='command sh ~/.scripts/iterm.sh'
 alias chrome='command sh ~/.scripts/chrome.sh'
 alias ala='command sh ~/.scripts/alacritty.sh'
+alias anim='command sh ~/.scripts/anim.sh'
+alias vpn='command sh ~/.scripts/vpn.sh'
 
 alias tm='tmux'
 alias tma='tmux attach'
