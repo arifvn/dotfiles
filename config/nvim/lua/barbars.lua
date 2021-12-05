@@ -6,8 +6,6 @@ map('n', '<leader>k', ':BufferNext<CR>', opts)
 
 map('n', '<C-W>', ':w<CR>:BufferClose<CR>', opts)
 
-vim.cmd [[ hi BufferTabpageFill guibg=#011728 ]]
-
 vim.g.bufferline = {
   animation = true,
   auto_hide = false,

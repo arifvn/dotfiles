@@ -5,6 +5,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 --             THEMES            --
 -----------------------------------
 
+Plug 'EdenEast/nightfox.nvim'
 Plug 'bluz71/vim-nightfly-guicolors'
 Plug('dracula/vim', { as = 'dracula' })
 Plug 'joshdick/onedark.vim'
