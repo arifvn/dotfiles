@@ -8,16 +8,9 @@
 -- vim.cmd 'colorscheme nightfly'
 
 -- THEME 2
--- local nightfox = require 'nightfox'
--- nightfox.setup {
--- fox = 'nightfox',
--- }
--- nightfox.load()
-
--- THEME 3
 -- vim.cmd 'colorscheme dracula'
 
--- THEME 4
+-- THEME 3
 vim.cmd 'colorscheme onedark'
 
 -- GLOBAL
