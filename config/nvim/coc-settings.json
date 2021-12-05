@@ -1,23 +1,27 @@
 {
-  "suggest.noselect": false,
-  "prettier.eslintIntegration": true,
-  "coc.preferences.formatOnSaveFiletypes": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "json",
-    "markdown",
-    "css",
-    "html"
-  ],
-  "eslint.autoFixOnSave": true,
-  "eslint.alwaysShowStatus": true,
-  "coc.source.emoji.filetypes": null,
-  "coc.source.emoji.triggerCharacters": [":", "…", "·", "ø", "µ"],
-  "suggest.snippetIndicator": "●",
-  "diagnostic.warningSign": "●",
-  "diagnostic.infoSign": "⌔",
-  "diagnostic.hintSign": "",
-  "diagnostic.errorSign": "●"
+	"suggest.noselect": false,
+	"coc.preferences.formatOnSaveFiletypes": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"json",
+		"markdown",
+		"css",
+		"html"
+	],
+	"eslint.autoFixOnSave": true,
+	"coc.source.emoji.filetypes": null,
+	"coc.source.emoji.triggerCharacters": [
+		":",
+		"…",
+		"·",
+		"ø",
+		"µ"
+	],
+	"suggest.snippetIndicator": "●",
+	"diagnostic.warningSign": "●",
+	"diagnostic.infoSign": "",
+	"diagnostic.hintSign": "",
+	"diagnostic.errorSign": "●"
 }
