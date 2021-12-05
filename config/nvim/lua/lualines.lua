@@ -11,7 +11,7 @@ local empty = {
 
 require('lualine').setup {
   options = {
-    theme = 'gruvbox',
+    theme = custom_nightfox,
     component_separators = '|',
     section_separators = { left = '', right = '' },
   },
