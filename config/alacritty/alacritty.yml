@@ -1,45 +1,37 @@
 shell:
   program: /usr/local/bin/fish
 
-# Colors
+# Nightfox Alacritty Colors
+# Style: nightfox
+# Upstream: https://github.com/edeneast/nightfox.nvim/raw/main/extra/nightfox/nightfox_alacritty.yml
 colors:
   # Default colors
   primary:
-    background: "#011526"
-    foreground: "#acb4c2"
-    bright_foreground: "#eeeeee"
-
-  # Cursor colors
-  cursor:
-    text: "#080808"
-    cursor: "#9ca1aa"
-
-  # Selection colors
-  selection:
-    text: "#080808"
-    background: "#b2ceee"
-
+    background: "0x192330"
+    foreground: "0xcdcecf"
   # Normal colors
   normal:
-    black: "#1d3b53"
-    red: "#fc514e"
-    green: "#a1cd5e"
-    yellow: "#e3d18a"
-    blue: "#82aaff"
-    magenta: "#c792ea"
-    cyan: "#7fdbca"
-    white: "#a1aab8"
-
+    black: "0x393b44"
+    red: "0xc94f6d"
+    green: "0x81b29a"
+    yellow: "0xdbc074"
+    blue: "0x719cd6"
+    magenta: "0x9d79d6"
+    cyan: "0x63cdcf"
+    white: "0xdfdfe0"
   # Bright colors
   bright:
-    black: "#7c8f8f"
-    red: "#ff5874"
-    green: "#21c7a8"
-    yellow: "#ecc48d"
-    blue: "#82aaff"
-    magenta: "#ae81ff"
-    cyan: "#7fdbca"
-    white: "#d6deeb"
+    black: "0x475072"
+    red: "0xd6616b"
+    green: "0x58cd8b"
+    yellow: "0xffe37e"
+    blue: "0x84cee4"
+    magenta: "0xb8a1e3"
+    cyan: "0x59f0ff"
+    white: "0xf2f2f2"
+  indexed_colors:
+    - { index: 16, color: "0xf4a261" }
+    - { index: 17, color: "0xd67ad2" }
 
 background_opacity: 1.0
 
@@ -59,13 +51,13 @@ font:
 
   offset:
     x: 0
-    y: 4
+    y: 3
 
   size: 12.0
 
   glyph_offset:
     x: 0
-    y: 3
+    y: 2
 
   use_thin_strokes: false
 
@@ -80,8 +72,8 @@ window:
     x: 49
     y: 70
   padding:
-    x: 10
-    y: 8
+    x: 4
+    y: 4
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
