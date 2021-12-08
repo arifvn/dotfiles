@@ -6,8 +6,6 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 -----------------------------------
 
 Plug 'bluz71/vim-nightfly-guicolors'
-Plug('dracula/vim', { as = 'dracula' })
-Plug 'joshdick/onedark.vim'
 
 -----------------------------------
 --  SYNTAX HL COMPLETION LINTER  --
