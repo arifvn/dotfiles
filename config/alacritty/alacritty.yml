@@ -72,7 +72,7 @@ window:
     x: 49
     y: 70
   padding:
-    x: 4
+    x: 8
     y: 4
 
 scrolling:
