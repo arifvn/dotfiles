@@ -13,7 +13,7 @@ return function(nvim_lsp, on_attach, handlers)
   local prettier = { formatCommand = 'prettierd ${INPUT}', formatStdin = true }
   local lua_stylua = { formatCommand = 'stylua -s -', formatStdin = true }
 
-  local efm_root_markers = { 'package.json', '.git/' }
+  local efm_root_markers = { 'package.json', '.git/', '.eslintrc.json' }
   local efm_languages = {
     css = { prettier },
     scss = { prettier },
