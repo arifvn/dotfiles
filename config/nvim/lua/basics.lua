@@ -57,3 +57,9 @@ vim.api.nvim_command [[augroup END]]
 if vim.fn.has 'autocmd' then
   vim.api.nvim_command [[ autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")| exe "normal! g'\"" | endif ]]
 end
+
+-- hightlight on yank
+vim.api.nvim_command [[augroup highlight_yank]]
+vim.api.nvim_command [[autocmd! ]]
+vim.api.nvim_command [[au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700} ]]
+vim.api.nvim_command [[augroup END]]
