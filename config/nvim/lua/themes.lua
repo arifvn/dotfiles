@@ -1,16 +1,3 @@
--- THEME 1
--- vim.g.nightflytransparent = 1
--- vim.g.nightflycursorcolor = 0
--- vim.g.nightflynormalfloat = 0
--- vim.g.nightflyUnderlineMatchParen = 1
--- vim.g.nightflyVertSplits = 0
--- vim.cmd [[ hi Visual term='reverse' cterm='reverse' guibg='Grey' ]]
--- vim.cmd 'colorscheme nightfly'
-
--- THEME 2
--- vim.cmd 'colorscheme dracula'
-
--- THEME 3
 vim.cmd 'colorscheme onedark'
 
 -- GLOBAL
