@@ -1,11 +1,6 @@
 local custom_nightfox = require 'lualine.themes.nightfox'
-custom_nightfox.normal.c.bg = '#182330'
-
-if string.find(vim.o.statusline, 'lualine') then
-  print 'Lualine is active'
-else
-  print 'Lualine is inactive'
-end
+custom_nightfox.normal.c.bg = '#192330'
+custom_nightfox.inactive.c.bg = 'NONE'
 
 local empty = {
   function()
