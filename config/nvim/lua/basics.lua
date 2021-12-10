@@ -4,7 +4,7 @@ vim.g.scriptencoding = 'utf-8'
 vim.cmd 'filetype plugin on'
 vim.cmd 'filetype plugin indent on'
 vim.cmd 'syntax enable'
-vim.opt.fillchars = 'eob: ' -- replace ~ for blank line (eob = EndOfBuffer) with empty
+vim.opt.fillchars:append 'eob: ' -- replace ~ for blank line (eob = EndOfBuffer) with empty
 vim.g.cursorhold_updatetime = 100 -- Fix Cursor Hold
 vim.opt.backspace = { 'start', 'eol', 'indent' }
 vim.opt.background = 'dark' -- " use colors that suit a dark background
