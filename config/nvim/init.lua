@@ -11,6 +11,7 @@ require 'colorizers'
 require 'lualines'
 require 'markdowns'
 require 'nerdcommenters'
+require 'neoscrolls'
 
 require 'nvimtrees'
 require 'barbars'

@@ -81,6 +81,7 @@ alias tmk='tmux kill-server'
 alias tms='tmux source-file ~/.tmux.conf'
 alias tml='tmux ls'
 
+alias p='cd ../'
 alias l='command clear'
 alias k='exa --long --git --icons --all'
 alias km='exa --long --git --icons --all --sort=modified'
@@ -91,4 +92,3 @@ alias lt2='exa --long --git --icons --tree -L 4'
 alias ld='exa --no-permissions --icons --git-ignore --tree --level=2 -I "node_modules"'
 alias ld1='exa --no-permissions --icons --git-ignore --tree --level=3 -I "node_modules"'
 alias ld2='exa --no-permissions --icons --git-ignore --tree --level=4 -I "node_modules"'
-

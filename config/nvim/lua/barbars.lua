@@ -6,7 +6,7 @@ map('n', '<leader>k', ':BufferNext<CR>', opts)
 
 map('n', '<C-W>', ':w<CR>:BufferClose<CR>', opts)
 
-vim.cmd [[ hi BufferTabpageFill guibg=#011728 ]]
+vim.cmd [[ hi BufferTabpageFill guibg=#01172800 ]]
 vim.cmd [[ hi BufferCurrent guibg=#004868 ]]
 vim.cmd [[ hi BufferCurrentSign guibg=#004868 ]]
 
@@ -14,18 +14,18 @@ vim.g.bufferline = {
   animation = true,
   auto_hide = false,
   tabpages = true,
-  closable = true,
+  closable = false,
   clickable = true,
   icons = true,
   icon_custom_colors = false,
-  icon_separator_active = ' ✅',
-  icon_separator_inactive = '',
+  icon_separator_active = '▎ ',
+  icon_separator_inactive = ' ',
   icon_close_tab = '',
   icon_close_tab_modified = '●',
   icon_pinned = '車',
   insert_at_end = false,
   insert_at_start = false,
-  maximum_padding = 3,
+  maximum_padding = 2,
   maximum_length = 30,
   semantic_letters = true,
   letters = 'asdfjkl;ghnmxcvbziowerutyqpASDFJKLGHNMXCVBZIOWERUTYQP',

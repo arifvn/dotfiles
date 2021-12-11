@@ -24,6 +24,7 @@ alias tmk='tmux kill-server'
 alias tms='tmux source-file ~/.tmux.conf'
 alias tml='tmux ls'
 
+alias p='cd ..'
 alias l='clear'
 alias k='exa --long --git --icons -a'
 alias km='exa --long --git --icons -a --sort=modified'
