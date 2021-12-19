@@ -45,6 +45,7 @@ Plug 'tpope/vim-repeat'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
 Plug 'norcalli/nvim-colorizer.lua'
+Plug 'psliwka/vim-smoothie'
 
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
