@@ -4,7 +4,7 @@ vim.opt.updatetime = 300
 vim.opt.shortmess = vim.o.shortmess .. 'c'
 vim.g.coc_global_extensions = {
   'coc-tsserver',
-	'coc-eslint',
+  'coc-eslint',
   'coc-html',
   'coc-snippets',
   'coc-json',

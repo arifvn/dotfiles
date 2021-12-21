@@ -12,6 +12,7 @@ require 'lualines'
 require 'markdowns'
 require 'nerdcommenters'
 require 'neoscrolls'
+require 'browsersearch'
 
 require 'nvimtrees'
 require 'barbars'

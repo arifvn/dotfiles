@@ -46,6 +46,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'karb94/neoscroll.nvim'
+Plug 'voldikss/vim-browser-search'
 
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
