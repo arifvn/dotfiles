@@ -91,7 +91,3 @@ alias lt2='exa --long --git --icons --tree -L 4'
 alias ld='exa --no-permissions --icons --git-ignore --tree --level=2 -I "node_modules"'
 alias ld1='exa --no-permissions --icons --git-ignore --tree --level=3 -I "node_modules"'
 alias ld2='exa --no-permissions --icons --git-ignore --tree --level=4 -I "node_modules"'
-
-# starship prompt
-set -gx STARSHIP_CONFIG ~/.config/starship/config.toml
-starship init fish | source

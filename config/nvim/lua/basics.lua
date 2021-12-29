@@ -4,7 +4,7 @@ vim.g.scriptencoding = 'utf-8'
 vim.cmd 'filetype plugin on'
 vim.cmd 'filetype plugin indent on'
 vim.cmd 'syntax enable'
-vim.opt.fillchars = 'eob: ' -- replace ~ for blank line (eob = EndOfBuffer) with empty
+vim.opt.fillchars:append 'eob: ' -- replace ~ sign in the EndOfBuffer with space ' '
 vim.g.cursorhold_updatetime = 100 -- Fix Cursor Hold
 vim.opt.backspace = { 'start', 'eol', 'indent' }
 vim.opt.background = 'dark' -- " use colors that suit a dark background
@@ -57,3 +57,9 @@ vim.api.nvim_command [[augroup END]]
 if vim.fn.has 'autocmd' then
   vim.api.nvim_command [[ autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")| exe "normal! g'\"" | endif ]]
 end
+
+-- hightlight on yank
+vim.api.nvim_command [[augroup highlight_yank]]
+vim.api.nvim_command [[autocmd! ]]
+vim.api.nvim_command [[au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700} ]]
+vim.api.nvim_command [[augroup END]]

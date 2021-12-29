@@ -58,9 +58,6 @@ vim.g.nvim_tree_icons = {
 map('n', '<C-t>', ':lua require"tree".toggle(false)<CR>', { noremap = true, silent = true })
 map('n', '<C-f>', ':lua require"tree".toggle(true)<CR>', { noremap = true, silent = true })
 
-vim.cmd [[ hi NvimTreeFolderIcon guifg=#ABB2BF ]]
-vim.cmd [[ hi NvimTreeFolderName guifg=#FFFFFF ]]
-
 require('nvim-tree').setup {
   disable_netrw = true,
   hijack_netrw = true,
