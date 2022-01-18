@@ -1,5 +1,8 @@
 local map = require 'map'
 
+-- turn of search highlight
+map('n', '<C-i>', ':nohl<CR>', { noremap = true })
+
 -- alt + q to quit without save
 map('n', '<S-q>', ':qa!<CR>', { noremap = true })
 

@@ -10,7 +10,13 @@ return function(nvim_lsp, on_attach, handlers)
   }
 
   -- Formatter
-  local prettier = { formatCommand = 'prettierd ${INPUT}', formatStdin = true }
+  local prettier = {
+    formatCommand = 'prettierd ${INPUT}',
+    formatStdin = true,
+    env = {
+      string.format('PRETTIERD_DEFAULT_CONFIG=%s', vim.fn.expand '~/.config/prettierd/.prettierrc.json'),
+    },
+  }
   local lua_stylua = { formatCommand = 'stylua -s -', formatStdin = true }
 
   local efm_root_markers = { 'package.json', '.git/' }
@@ -24,6 +30,7 @@ return function(nvim_lsp, on_attach, handlers)
     html = { prettier },
     svelte = { prettier },
     yaml = { prettier },
+    toml = { prettier },
     json = { prettier },
     markdown = { prettier },
     lua = { lua_stylua },

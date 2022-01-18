@@ -1,7 +1,8 @@
 local colors = {
   blue = '#80a0ff',
   cyan = '#79dac8',
-  black = '#282C34',
+  black = '#282C3400',
+  black1 = '#282C34',
   white = '#c6c6c6',
   red = '#ff5189',
   violet = '#d183e8',
@@ -10,14 +11,14 @@ local colors = {
 
 local bubbles_theme = {
   normal = {
-    a = { fg = colors.black, bg = colors.violet },
+    a = { fg = colors.black1, bg = colors.violet },
     b = { fg = colors.white, bg = colors.grey },
-    c = { fg = colors.black, bg = colors.black },
+    c = { fg = colors.black, bg = colors.black1 },
   },
 
-  insert = { a = { fg = colors.black, bg = colors.blue } },
-  visual = { a = { fg = colors.black, bg = colors.cyan } },
-  replace = { a = { fg = colors.black, bg = colors.red } },
+  insert = { a = { fg = colors.black1, bg = colors.blue } },
+  visual = { a = { fg = colors.black1, bg = colors.cyan } },
+  replace = { a = { fg = colors.black1, bg = colors.red } },
 
   inactive = {
     a = { fg = colors.black, bg = colors.black },
@@ -54,7 +55,7 @@ require('lualine').setup {
       'diff',
       { 'diagnostics', sources = { 'nvim_lsp', 'coc' } },
     },
-    lualine_c = { 'fileformat' },
+    lualine_c = {},
     lualine_x = {},
     lualine_y = { 'filetype', 'progress' },
     lualine_z = {
