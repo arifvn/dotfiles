@@ -10,31 +10,35 @@ return function(nvim_lsp, on_attach, handlers)
   }
 
   -- Formatter
-  local prettier = {
+  local prettierd = {
+    formatCommand = 'prettierd ${INPUT}',
+    formatStdin = true,
+  }
+  local prettierdHtml = {
     formatCommand = 'prettierd ${INPUT}',
     formatStdin = true,
     env = {
-      string.format('PRETTIERD_DEFAULT_CONFIG=%s', vim.fn.expand '~/.config/prettierd/.prettierrc.json'),
+      string.format('PRETTIERD_DEFAULT_CONFIG=%s', vim.fn.expand '~/.config/prettierd/prettierrc.json'),
     },
   }
   local lua_stylua = { formatCommand = 'stylua -s -', formatStdin = true }
 
   local efm_root_markers = { 'package.json', '.git/' }
-  local efm_languages = {
-    css = { prettier },
-    scss = { prettier },
-    sass = { prettier },
-    less = { prettier },
-    graphql = { prettier },
-    vue = { prettier },
-    html = { prettier },
-    svelte = { prettier },
-    yaml = { prettier },
-    toml = { prettier },
-    json = { prettier },
-    markdown = { prettier },
-    lua = { lua_stylua },
 
+  local efm_languages = {
+    css = { prettierd },
+    scss = { prettierd },
+    sass = { prettierd },
+    less = { prettierd },
+    graphql = { prettierd },
+    vue = { prettierd },
+    html = { prettierdHtml },
+    svelte = { prettierd },
+    yaml = { prettierd },
+    toml = { prettierd },
+    json = { prettierd },
+    markdown = { prettierd },
+    lua = { lua_stylua },
     javascript = { eslint },
     typescript = { eslint },
     javascriptreact = { eslint },

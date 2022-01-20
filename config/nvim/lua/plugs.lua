@@ -48,20 +48,22 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'karb94/neoscroll.nvim'
+Plug 'ggandor/lightspeed.nvim'
 
+-- GIT
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
+-- DISPLAYS
 Plug('mhinz/vim-startify', { branch = 'center' })
 Plug 'nvim-lualine/lualine.nvim'
 
+-- NAVIGATION
 Plug 'romgrk/barbar.nvim'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'ggandor/lightspeed.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-project.nvim'
-
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'kyazdani42/nvim-web-devicons'
 
