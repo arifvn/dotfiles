@@ -1,6 +1,13 @@
 local tree_cb = require('nvim-tree.config').nvim_tree_callback
 local map = require 'map'
 
+-- open image using qlmanage (MacOS) if available
+if vim.fn.executable 'qlmanage' then
+  vim.api.nvim_command [[ au BufEnter *.png,*.jpg,*.gif silent exec "! qlmanage -p ".expand("%") | :bw ]]
+else
+  print "Can't open image. Please install an image preview program."
+end
+
 -- Disable statusline within nvimtree buffer
 vim.api.nvim_command [[
 au BufEnter,BufWinEnter,WinEnter,CmdwinEnter * if bufname('%') == "NvimTree" | set laststatus=0 | else | set laststatus=2 | endif
@@ -55,8 +62,8 @@ vim.g.nvim_tree_icons = {
   },
 }
 
-map('n', '<C-t>', ':lua require"tree".toggle(false)<CR>', { noremap = true, silent = true })
-map('n', '<C-f>', ':lua require"tree".toggle(true)<CR>', { noremap = true, silent = true })
+map('n', '<C-t>', ':lua require"_nvimtree_tree".toggle(false)<CR>', { noremap = true, silent = true })
+map('n', '<C-f>', ':lua require"_nvimtree_tree".toggle(true)<CR>', { noremap = true, silent = true })
 
 require('nvim-tree').setup {
   disable_netrw = true,
@@ -96,7 +103,7 @@ require('nvim-tree').setup {
         { key = { '<2-RightMouse>', 'cd' }, cb = tree_cb 'cd' },
         { key = 'v', cb = tree_cb 'vsplit' },
         { key = 'h', cb = tree_cb 'split' },
-        { key = '<C-t>', cb = ':lua require"tree".toggle()<CR>' },
+        { key = '<C-t>', cb = ':lua require"_nvimtree_tree".toggle()<CR>' },
       },
     },
   },
