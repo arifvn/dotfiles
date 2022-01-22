@@ -1,14 +1,14 @@
 local map = require 'map'
 
 -- turn of search highlight
-map('n', '<C-i>', ':nohl<CR>', { noremap = true })
+map('n', '<C-i>', ':nohl<CR>:echo ""<CR>', { noremap = true, silent = true })
 
 -- alt + q to quit without save
 map('n', '<S-q>', ':qa!<CR>', { noremap = true })
 
 -- alt + s to save
-map('n', '<C-S>', ':w<CR>:echo ""<CR>', { noremap = true })
-map('i', '<C-S>', '<Esc>:w<CR>gi<cmd>echo ""<CR>', { noremap = true })
+map('n', '<C-S>', ':w<CR>:echo ""<CR>', { noremap = true, silent = true })
+map('i', '<C-S>', '<Esc>:w<CR>gi<cmd>echo ""<CR>', { noremap = true, silent = true })
 
 -- jk and kj to close from insert mode
 map('i', 'jk', '<Esc>', { noremap = true })
@@ -25,7 +25,7 @@ map('n', 'yf', ':let @+=expand("%:p")<CR>', { noremap = true, silent = true })
 map('n', 'yd', ':let @+=expand("%:p:h")<CR>', { noremap = true, silent = true })
 
 -- select all and copy using y + a
-map('n', 'ya', 'gg<S-v>GY<C-c><cmd> :echo "All Copied"<CR>', { silent = false })
+map('n', 'ya', 'gg<S-v>GY<C-c><cmd> :echo " "<CR>', { silent = true })
 
 -- Remap arrow keys to do nothing
 map('n', '<Left>', '<NOP>')
