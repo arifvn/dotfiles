@@ -1,3 +1,4 @@
+-- brew install lua-language-server
 return function(nvim_lsp, on_attach, handlers, capabilities)
   local system_name
 

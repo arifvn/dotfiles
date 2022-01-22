@@ -1,3 +1,4 @@
+-- npm install -g typescript typescript-language-server
 return function(nvim_lsp, on_attach, handlers, capabilities)
   nvim_lsp.tsserver.setup {
     filetypes = {
