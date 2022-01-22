@@ -69,9 +69,8 @@ return function(nvim_lsp, on_attach, handlers)
     vue = { prettierd },
     html = { prettierd },
     svelte = { prettierd },
-    yaml = { prettierd },
-    toml = { prettierd },
     json = { prettierd },
+    yaml = { prettierd },
   }
   nvim_lsp.efm.setup {
     init_options = { documentFormatting = true },
