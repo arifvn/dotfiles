@@ -66,6 +66,7 @@ alias vi='nvim'
 alias vim='nvim'
 
 alias md='command mkdir'
+alias cat='bat'
 
 alias j='z'
 alias kt='command sh ~/.scripts/kitty.sh'

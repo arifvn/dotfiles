@@ -1,6 +1,6 @@
 local signs = {
   Error = '●',
-  Warning = '○',
+  Warning = '●',
   Warn = '○', -- sumneko_lua
   Hint = '○',
   Information = '○', -- sumneko_lua

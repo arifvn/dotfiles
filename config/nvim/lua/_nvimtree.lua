@@ -90,7 +90,7 @@ require('nvim-tree').setup {
     timeout = 500,
   },
   system_open = { cmd = nil, args = {} },
-  filters = { dotfiles = false, custom = { '.git' } },
+  filters = { dotfiles = false, custom = { '.git', 'node_modules' } },
   view = {
     width = 25,
     height = 30,
