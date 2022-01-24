@@ -6,6 +6,9 @@ map('n', '<C-i>', ':nohl<CR>:echo ""<CR>', { noremap = true, silent = true })
 -- alt + q to quit without save
 map('n', '<S-q>', ':qa!<CR>', { noremap = true })
 
+-- alt + w delete buffer (ex. close buffer tab)
+map('n', '<c-w>', ':w<cr>:echo ""<CR>:bd<cr>', { noremap = true, silent = true })
+
 -- alt + s to save
 map('n', '<C-S>', ':w<CR>:echo ""<CR>', { noremap = true, silent = true })
 map('i', '<C-S>', '<Esc>:w<CR>gi<cmd>echo ""<CR>', { noremap = true, silent = true })

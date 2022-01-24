@@ -1,5 +1,5 @@
 require('nvim-treesitter.configs').setup {
-  highlight = { enable = true, disable = {} },
+  highlight = { enable = true, disable = { 'html', 'css' } },
   indent = { enable = true, disable = {} },
   ensure_installed = 'maintained',
   incremental_selection = {

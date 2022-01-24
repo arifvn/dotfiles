@@ -13,6 +13,7 @@ Plug 'joshdick/onedark.vim'
 
 -- SYNTAX HIGHLIGHTING
 Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
+Plug 'sheerun/vim-polyglot'
 
 -- LSP
 Plug 'neovim/nvim-lspconfig'
@@ -50,6 +51,7 @@ Plug 'airblade/vim-gitgutter'
 -- DISPLAYS
 Plug('mhinz/vim-startify', { branch = 'center' })
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'vimpostor/vim-tpipeline'
 
 -- NAVIGATION
 Plug 'karb94/neoscroll.nvim'
@@ -62,9 +64,6 @@ Plug 'nvim-telescope/telescope-project.nvim'
 
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'kyazdani42/nvim-web-devicons'
-
-Plug 'MunifTanjim/nui.nvim'
-Plug 'VonHeikemen/fine-cmdline.nvim'
 
 -- EDITING
 Plug('mg979/vim-visual-multi', { branch = 'master' })

@@ -1,15 +1,16 @@
 local map = require 'map'
+
 map('n', ':', '<cmd>FineCmdline<CR>', { noremap = true, silent = true })
-map('n', '/', '<cmd>FineCmdline<CR>/', { noremap = true, silent = true })
+-- map('n', '/', '<cmd>FineCmdline<CR>/', { noremap = true, silent = true })
 
 require('fine-cmdline').setup {
   popup = {
     position = {
-      row = '50%',
+      row = '30%',
       col = '50%',
     },
     size = {
-      width = '30%',
+      width = '50%',
     },
     border = {
       style = 'rounded',
