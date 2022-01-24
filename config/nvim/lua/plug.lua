@@ -6,6 +6,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 -----------------------------------
 
 Plug 'joshdick/onedark.vim'
+Plug('folke/tokyonight.nvim', { ['branch'] = 'main' })
 
 -----------------------------------
 --  SYNTAX HL COMPLETION LINTER  --

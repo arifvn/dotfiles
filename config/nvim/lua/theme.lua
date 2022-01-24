@@ -1,4 +1,17 @@
-vim.cmd 'colorscheme onedark'
+-- vim.cmd 'colorscheme onedark'
+vim.api.nvim_command [[
+let g:tokyonight_style = "night"
+let g:tokyonight_tranparent_sidebar = 1
+let g:tokyonight_tranparent = 1
+let g:tokyonight_dark_sidebar = 0
+let g:tokyonight_dark_float = 0
+
+if exists('$TERMINFO')
+	colorscheme tokyonight
+else 
+	colorscheme onedark
+endif
+]]
 
 -- GLOBAL
 vim.cmd [[ hi Normal guibg=NONE ctermbg=NONE ]]
