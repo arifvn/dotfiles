@@ -135,7 +135,7 @@ ins_left {
 ins_left {
   'diagnostics',
   sources = { 'nvim_lsp' },
-  symbols = { error = '', warn = '  ', info = '  ' },
+  symbols = { error = '' .. ' ', warn = ' ' .. ' ', info = ' ' .. ' ' },
   diagnostics_color = {
     color_error = { fg = colors.red },
     color_warn = { fg = colors.yellow },
@@ -168,6 +168,7 @@ ins_right {
     end
     return msg
   end,
+  padding = { left = 1, right = 1 },
   icon = '',
   color = { fg = '#ffffff', gui = 'bold' },
 }

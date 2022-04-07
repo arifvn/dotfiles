@@ -1,13 +1,14 @@
--- vim.cmd 'colorscheme onedark'
+-- Kitty terminal using 'tokyonight'
+-- Iterm2 terminal using 'onedark'
 vim.api.nvim_command [[
-let g:tokyonight_style = "night"
-let g:tokyonight_tranparent_sidebar = 1
-let g:tokyonight_tranparent = 1
-let g:tokyonight_dark_sidebar = 0
-let g:tokyonight_dark_float = 0
-
 if exists('$TERMINFO')
-	colorscheme tokyonight
+	let g:tokyonight_style = "night"
+	let g:tokyonight_tranparent_background = 1
+	let g:tokyonight_menu_selection_background = 'green'
+	let g:tokyonight_disable_italic_comment = 0
+	let g:tokyonight_enable_italic = 1
+
+	colorscheme onedark
 else 
 	colorscheme onedark
 endif
@@ -21,9 +22,18 @@ vim.cmd [[ hi Folded guibg=none ctermbg=NONE ]]
 vim.cmd [[ hi SpecialKey guibg=none ctermbg=NONE ]]
 vim.cmd [[ hi EndOfBuffer guibg=none ctermbg=NONE ]]
 vim.cmd [[ hi SignColumn guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE ]]
-vim.cmd [[ hi VertSplit guifg=#2F343C guibg=NONE ctermbg=NONE ctermfg=NONE ]]
+vim.cmd [[ hi IncSearch ctermfg=180 ctermbg=59 guifg=#E5C07B guibg=#5C6370 ]]
+vim.cmd [[ hi TabLineSel guifg=#444b6a guibg=#232433 ]]
+vim.cmd [[ hi Pmenu guifg=#d8d8d8 guibg=#1D2B41 ]]
+-- vim.cmd [[ hi Pmenu guifg=#d8d8d8 guibg=#3B3543 ]]
 
--- cursor color on search mode
+-- make vertical split line tranparent
+vim.cmd [[
+	hi VertSplit ctermfg=1 ctermbg=NONE cterm=NONE
+	set fillchars+=vert:\ 
+]]
+
+-- blinking cursor when navigating in search mode
 vim.cmd [[
 	nnoremap <silent> n n:call HLNext(0.1)<cr>
 	nnoremap <silent> N N:call HLNext(0.1)<cr>

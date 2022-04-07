@@ -13,15 +13,15 @@ telescope.setup {
   },
   defaults = {
     preview = false,
-    prompt_prefix = '▶ ',
-    selection_caret = '▶ ',
+    prompt_prefix = ' ▶ ',
+    selection_caret = '▊ ',
     layout_config = { horizontal = { preview_width = 0.5 } },
     file_ignore_patterns = { 'node_modules/.*', '%.env' },
   },
   pickers = {
     file_browser = { theme = 'dropdown' },
     find_files = { theme = 'dropdown' },
-    live_grep = { theme = 'dropdown' },
+    live_grep = { theme = 'dropdown', preview = true },
     buffers = { theme = 'dropdown' },
     help_tags = { theme = 'dropdown' },
   },
@@ -37,3 +37,7 @@ map(
 )
 map('n', '<c-b>', "<cmd> lua require('telescope.builtin').buffers({ show_all_buffers = true })<cr>", opts)
 map('n', '<c-g>', "<cmd> lua require('telescope.builtin').live_grep()<cr>", opts)
+
+vim.cmd [[ hi TelescopePromptTitle guifg=#2C323C guibg=#ECBE7B ctermbg=NONE ctermfg=NONE ]]
+vim.cmd [[ hi TelescopePreviewTitle guifg=#2C323C guibg=#ECBE7B ctermbg=NONE ctermfg=NONE ]]
+vim.cmd [[ hi TelescopeResultsTitle guifg=#2C323C guibg=#ECBE7B ctermbg=NONE ctermfg=NONE ]]

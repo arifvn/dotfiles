@@ -11,5 +11,10 @@ return function(nvim_lsp, on_attach, handlers, capabilities)
         end,
       },
     },
+    settings = {
+      json = {
+        schemas = require('schemastore').json.schemas(),
+      },
+    },
   }
 end

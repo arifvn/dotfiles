@@ -35,11 +35,11 @@ cmp.setup {
     format = function(entry, vim_item)
       vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind)
       vim_item.menu = ({
-        buffer = '[Buffer]',
         nvim_lsp = '[LSP]',
-        path = '[Path]',
         luasnip = '[LuaSnip]',
         nvim_lua = '[Lua]',
+        buffer = '[Buffer]',
+        path = '[Path]',
         latex_symbols = '[LaTeX]',
         emoji = '[Emoji]',
       })[entry.source.name]
@@ -64,9 +64,9 @@ cmp.setup {
     ['<CR>'] = cmp.mapping.confirm { select = true },
   },
   sources = cmp.config.sources {
-    { name = 'nvim_lua' },
     { name = 'nvim_lsp' },
     { name = 'vsnip' },
+    { name = 'nvim_lua' },
     { name = 'buffer' },
     { name = 'path' },
     { name = 'emoji', option = { insert = true } },

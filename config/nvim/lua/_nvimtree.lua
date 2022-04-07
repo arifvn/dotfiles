@@ -3,7 +3,7 @@ local map = require 'map'
 
 -- open image using qlmanage (MacOS) if available
 if vim.fn.executable 'qlmanage' then
-  vim.api.nvim_command [[ au BufEnter *.png,*.jpg,*.gif silent exec "! qlmanage -p ".expand("%") | :bw ]]
+  vim.api.nvim_command [[ au BufEnter *.png,*.jpg,*.gif,*.svg silent exec "! qlmanage -p ".expand("%") | :bw ]]
 else
   print "Can't open image. Please install an image preview program."
 end
