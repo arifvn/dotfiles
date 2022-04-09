@@ -2,6 +2,10 @@
 # BASIC CONFIG
 # ---------------------------
 
+if status is-login
+    cd ~/REPO
+end
+
 set -gx TERM xterm-256color
 
 set -gx EDITOR nvim
@@ -92,3 +96,7 @@ alias lt2='exa --long --git --icons --tree -L 4'
 alias ld='exa --no-permissions --icons --git-ignore --tree --level=2 -I "node_modules"'
 alias ld1='exa --no-permissions --icons --git-ignore --tree --level=3 -I "node_modules"'
 alias ld2='exa --no-permissions --icons --git-ignore --tree --level=4 -I "node_modules"'
+
+alias gitdown='command sh ~/repo/github-folder-downloader'
+alias gitcreate='command sh ~/repo/github-create-repo'
+alias gitconf='command cat ~/repo/github.txt'
