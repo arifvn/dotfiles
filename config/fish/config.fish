@@ -96,5 +96,3 @@ alias ld2='exa --no-permissions --icons --git-ignore --tree --level=4 -I "node_m
 alias gitdown='command sh ~/repo/github-folder-downloader'
 alias gitcreate='command sh ~/repo/github-create-repo'
 alias gitconf='command cat ~/repo/github.txt | pbcopy | cat ~/repo/github.txt'
-
-thefuck --alias | source
