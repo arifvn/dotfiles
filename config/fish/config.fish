@@ -93,6 +93,6 @@ alias ld='exa --no-permissions --icons --git-ignore --tree --level=2 -I "node_mo
 alias ld1='exa --no-permissions --icons --git-ignore --tree --level=3 -I "node_modules"'
 alias ld2='exa --no-permissions --icons --git-ignore --tree --level=4 -I "node_modules"'
 
-alias gitdown='command sh ~/repo/git_utils/github-folder-downloader'
-alias gitcreate='command sh ~/repo/git_utils/github-create-repo'
-alias gitconf='command cat ~/repo/git_utils/github.txt | pbcopy | cat ~/repo/git_utils/github.txt'
+alias gitdown='command sh ~/repo/cheatsheet/git_utils/github-folder-downloader'
+alias gitcreate='command sh ~/repo/cheatsheet/git_utils/github-create-repo'
+alias gitconf='command cat ~/repo/cheatsheet/git_utils/github.txt | pbcopy | cat ~/repo/cheatsheet/git_utils/github.txt'
